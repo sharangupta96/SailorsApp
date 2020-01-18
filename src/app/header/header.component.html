@@ -18,7 +18,7 @@
                 </button>
             </div>
         </div>
-        <div class="row pt-3 pl-5 pr-5" style="background-color: #f8f8f8;">
+        <div class="row pl-5 pr-5 header">
             <div class="col-lg-3">
                 <img src="../../assets/logo.png" alt="Logo">
             </div>
@@ -30,10 +30,11 @@
                 <span class="navLinks">CONTACT</span>
             </div>
             <div class="col-lg-4 alignCenter mt-2">
-                <i class="fa fa-search iconPosition" aria-hidden="true"></i>
-                <i class="fa fa-user iconPosition" aria-hidden="true"></i>
-                <i class="fa fa-heart-o iconPosition" aria-hidden="true"></i>
-                <i class="fa fa-shopping-cart iconPosition" aria-hidden="true"></i>
+                <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-search iconPosition" aria-hidden="true"></i>
+                <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-user iconPosition" aria-hidden="true"></i>
+                <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-heart-o iconPosition" aria-hidden="true"></i>
+                <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-shopping-cart iconPosition" aria-hidden="true"></i>
+                <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-lightbulb-o iconPosition" aria-hidden="true" (click)="toggleTheme()"></i>
             </div>
         </div>
     </div>
