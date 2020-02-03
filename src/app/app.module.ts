@@ -9,6 +9,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { BannerComponent } from './banner/banner.component';
 import { ProductListingComponent } from './product-listing/product-listing.component';
 import { NewsLetterComponent } from './news-letter/news-letter.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NewsLetterComponent } from './news-letter/news-letter.component';
     HeaderComponent,
     BannerComponent,
     ProductListingComponent,
-    NewsLetterComponent
+    NewsLetterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
