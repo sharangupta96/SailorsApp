@@ -6,10 +6,10 @@ import { of as observableOf, of} from 'rxjs';
   providedIn: 'root'
 })
 export class ProductServiceService {
-  products = require('../../data/generated.json');
+  products = '../assets/data/generated.json';
   constructor(private http: HttpClient) { }
 
   getProductList(){
-    return observableOf(this.products);
-  }
+    return this.http.get(this.products);
+  }   
 }
