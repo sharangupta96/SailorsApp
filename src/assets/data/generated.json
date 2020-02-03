@@ -1,52 +1,52 @@
 [
   {
-    "imageUrl": "assets/Banner/banner-bg.png",
+    "imageUrl": "assets/Product/f-p-1.png",
     "title": "Long SLeeve Tshirt",
-    "price": 150
+    "price": "$150.00"
   },
   {
-    "productImage": "",
+    "imageUrl": "assets/Product/f-p-2.png",
     "title": "Long SLeeve Tshirt",
-    "price": 150
+    "price": "$150.00"
   },
   {
-    "productImage": "",
+    "imageUrl": "assets/Product/f-p-3.png",
     "title": "Long SLeeve Tshirt",
-    "price": 150
+    "price": "$150.00"
   },
   {
-    "productImage": "",
+    "imageUrl": "assets/Product/f-p-4.png",
     "title": "Long SLeeve Tshirt",
-    "price": 150
+    "price": "$150.00"
   },
   {
-    "productImage": "",
-    "title": "Long SLeeve Tshirt",
-    "price": 150
+    "imageUrl": "assets/Product/f-p-5.png",
+    "title": "Long Sleeve Tshirt",
+    "price": "$150.00"
   },
   {
-    "productImage": "",
-    "title": "Long SLeeve Tshirt",
-    "price": 150
+    "imageUrl": "assets/Product/f-p-1.png",
+    "title": "Long Sleeve Tshirt",
+    "price": "$150.00"
   },
   {
-    "productImage": "",
-    "title": "Long SLeeve Tshirt",
-    "price": 150
+    "imageUrl": "assets/Product/f-p-2.png",
+    "title": "Long Sleeve Tshirt",
+    "price": "$150.00"
   },
   {
-    "productImage": "",
-    "title": "Long SLeeve Tshirt",
-    "price": 150
+    "imageUrl": "assets/Product/f-p-3.png",
+    "title": "Long Sleeve Tshirt",
+    "price": "$150.00"
   },
   {
-    "productImage": "",
-    "title": "Long SLeeve Tshirt",
-    "price": 150
+    "imageUrl": "assets/Product/f-p-4.png",
+    "title": "Long Sleeve Tshirt",
+    "price": "$150.00"
   },
   {
-    "productImage": "",
-    "title": "Long SLeeve Tshirt",
-    "price": 150
+    "imageUrl": "assets/Product/f-p-5.png",
+    "title": "Long Sleeve Tshirt",
+    "price": "$150.00"
   }
 ]
