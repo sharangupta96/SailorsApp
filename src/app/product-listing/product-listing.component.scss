@@ -1,15 +1,18 @@
 .list{
     display: block;
+    background-color: var(--listing-background-color);
     .list-item{
         border:none;
         height: 250px;
         width: 220px;
         display:inline-table;
+        background-color: var(--listing-background-color);
         .items{
             text-align: center;
         }
         .item-name{
             font-size: 12px;
+            color: var(--text-color);
         }
         .item-price{
             font-size: 12px;

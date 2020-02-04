@@ -8,7 +8,9 @@ export interface Theme {
     name: "light",
     properties: {
       "--text-color": "#000000",
-      "--background-color": "#f6f6f6"
+      "--header-background-color": "#f6f6f6",
+      "--listing-background-color": "#ffffff",
+      "--newsletter-background-color": "#eaf4ff"
     }
   };
   
@@ -16,6 +18,8 @@ export interface Theme {
     name: "dark",
     properties: {
       "--text-color": "#fff",
-      "--background-color": "#000000"
+      "--header-background-color": "#000000",
+      "--listing-background-color": "#000000",
+      "--newsletter-background-color": "#007bff"
     }
   };

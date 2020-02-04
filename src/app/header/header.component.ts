@@ -7,20 +7,20 @@ import { ThemeService } from "../theme/theme.service";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  iconColor = false;
+  // iconColor = false;
   constructor(private themeService: ThemeService) { }
 
   ngOnInit() {
-    this.themeService.setLightTheme();
+    // this.themeService.setLightTheme();
   }
-  toggleTheme() {
-    if (this.themeService.isDarkTheme()) {
-      this.themeService.setLightTheme();
-      this.iconColor = false;
-    } else {
-      this.themeService.setDarkTheme();
-      this.iconColor = true;
-    }
-  }
+  // toggleTheme() {
+  //   if (this.themeService.isDarkTheme()) {
+  //     this.themeService.setLightTheme();
+  //     this.iconColor = false;
+  //   } else {
+  //     this.themeService.setDarkTheme();
+  //     this.iconColor = true;
+  //   }
+  // }
 
 }

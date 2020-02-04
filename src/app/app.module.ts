@@ -10,6 +10,7 @@ import { BannerComponent } from './banner/banner.component';
 import { ProductListingComponent } from './product-listing/product-listing.component';
 import { NewsLetterComponent } from './news-letter/news-letter.component';
 import { FooterComponent } from './footer/footer.component';
+import { ThemeModule } from './theme/theme.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    ThemeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
