@@ -8,14 +8,13 @@ import { ProductServiceService } from '../services/product-service.service';
   styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent implements OnInit {
-  oneProduct;
+  oneProduct: any;
   constructor(private route: ActivatedRoute, private productService: ProductServiceService) { }
 
   ngOnInit() {
     const id = +this.route.snapshot.paramMap.get('id');
-      this.productService.getHero(id)
-        .subscribe((product) => {this.oneProduct = product
-        console.log(this.oneProduct)});
+    this.productService.getHero(id)
+      .subscribe((product) => { this.oneProduct = product});
   }
 
 }
