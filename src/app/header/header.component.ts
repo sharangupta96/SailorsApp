@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ThemeService } from "../theme/theme.service";
 
 @Component({
@@ -7,20 +7,10 @@ import { ThemeService } from "../theme/theme.service";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  // iconColor = false;
+  @Input() iconColor: boolean = false;
   constructor(private themeService: ThemeService) { }
 
   ngOnInit() {
-    // this.themeService.setLightTheme();
   }
-  // toggleTheme() {
-  //   if (this.themeService.isDarkTheme()) {
-  //     this.themeService.setLightTheme();
-  //     this.iconColor = false;
-  //   } else {
-  //     this.themeService.setDarkTheme();
-  //     this.iconColor = true;
-  //   }
-  // }
 
 }

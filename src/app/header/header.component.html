@@ -1,46 +1,44 @@
-
-    <div class="col-lg-12" style="
+<div class="col-lg-12" style="
     position: fixed;
     z-index: 1;">
-        <div class="row pt-1 pl-5 pr-5" style="border-bottom: solid 1px #eff0f1; background-color: white;">
-            <div class="col-lg-8">
-                <div class="greyText">
-                    call us 012 445698 7456 896
-                </div>
-            </div>
-            <div class="col-lg-4 alignCenter">
-                <button class="greyButton">
-                    login/register
-                </button>
-                <button class="greyButton">
-                    my account
-                </button>
-                <button class="greyButton">
-                    contact us
-                </button>
+    <div class="row pt-1 pl-5 pr-5" style="border-bottom: solid 1px #eff0f1; background-color: white;">
+        <div class="col-lg-7">
+            <div class="greyText">
+                call us 012 445698 7456 896
             </div>
         </div>
-        <div class="row pl-5 pr-5 header">
-            <div class="col-lg-3">
-                <img src="../../assets/logo.png" alt="Logo">
-            </div>
-            <div class="col-lg-5 alignCenter mt-2">
-                <span class="navLinks">HOME</span>
-                <span class="navLinks">SHOP</span>
-                <span class="navLinks">BLOG</span>
-                <span class="navLinks">PAGES</span>
-                <span class="navLinks">CONTACT</span>
-            </div>
-            <div class="col-lg-4 alignCenter mt-2">
-                <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-search iconPosition" aria-hidden="true"></i>
-                <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-user iconPosition" aria-hidden="true"></i>
-                <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-heart-o iconPosition" aria-hidden="true"></i>
-                <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-shopping-cart iconPosition" aria-hidden="true"></i>
-                <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-lightbulb-o iconPosition" aria-hidden="true" (click)="toggleTheme()"></i>
-            </div>
+        <div class="col-lg-5 alignCenter">
+            <button class="greyButton">
+                login/register
+            </button>
+            <button class="greyButton">
+                my account
+            </button>
+            <button class="greyButton">
+                contact us
+            </button>
         </div>
     </div>
-    <!-- --black-025: #fafafb;
+    <div class="row pl-5 pr-5 header">
+        <div class="col-lg-3">
+            <img src="../../assets/logo.png" alt="Logo">
+        </div>
+        <div class="col-lg-5 alignCenter mt-2">
+            <span class="navLinks">HOME</span>
+            <span class="navLinks">SHOP</span>
+            <span class="navLinks">BLOG</span>
+            <span class="navLinks">PAGES</span>
+            <span class="navLinks">CONTACT</span>
+        </div>
+        <div class="col-lg-4 alignCenter mt-2">
+            <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-search iconPosition" aria-hidden="true"></i>
+            <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-user iconPosition" aria-hidden="true"></i>
+            <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-heart-o iconPosition" aria-hidden="true"></i>
+            <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-shopping-cart iconPosition" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+<!-- --black-025: #fafafb;
     --black-050: #eff0f1;
     --black-075: #e4e6e8;
     --black-100: #d6d9dc;
