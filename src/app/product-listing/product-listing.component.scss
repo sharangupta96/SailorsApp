@@ -1,6 +1,8 @@
 .list{
     display: block;
     background-color: var(--listing-background-color);
+    padding-top: 75px;
+    padding-bottom: 90px;
     .list-item{
         border:none;
         height: 250px;
