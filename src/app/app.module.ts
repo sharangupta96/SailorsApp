@@ -11,6 +11,7 @@ import { ProductListingComponent } from './product-listing/product-listing.compo
 import { NewsLetterComponent } from './news-letter/news-letter.component';
 import { FooterComponent } from './footer/footer.component';
 import { ThemeModule } from './theme/theme.module';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ThemeModule } from './theme/theme.module';
     BannerComponent,
     ProductListingComponent,
     NewsLetterComponent,
-    FooterComponent
+    FooterComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

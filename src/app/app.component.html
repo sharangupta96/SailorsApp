@@ -1,6 +1,5 @@
 <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-lightbulb-o iconPosition" aria-hidden="true" (click)="toggleTheme()"></i>
 <app-header [iconColor]="iconColor"></app-header>
-<app-banner></app-banner>
-<app-product-listing></app-product-listing>
+<router-outlet></router-outlet>
 <app-news-letter [iconColor]="iconColor"></app-news-letter>
 <app-footer></app-footer>

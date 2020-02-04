@@ -11,5 +11,9 @@ export class ProductServiceService {
 
   getProductList(){
     return this.http.get(this.products);
-  }   
+  }
+  getHero(id: number) {
+    return of(this.http.get(this.products).subscribe((products: any) => {products.find(hero => hero.id === id)}));
+  }
+
 }
