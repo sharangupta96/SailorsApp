@@ -8,7 +8,7 @@
                     <div class="input-group">
                         <input type="email" class="form-control" placeholder="Enter your email">
                         <span class="input-group-btn">
-                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                            <button [ngClass]="iconColor ? 'btn btn-dark' : 'btn btn-primary'" class="btn" type="submit">Subscribe</button>
                         </span>
                     </div>
                 </div>
