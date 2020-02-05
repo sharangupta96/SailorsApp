@@ -11,5 +11,9 @@ export class BannerComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  scrollToList(){
+    let el = document.getElementById('productList');
+    el.scrollIntoView();
+  }
+ 
 }
