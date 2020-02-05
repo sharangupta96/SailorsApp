@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(private themeService: ThemeService,  private router: Router) { }
   ngOnInit() {
     this.themeService.setLightTheme();
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/');
   }
   toggleTheme() {
     if (this.themeService.isDarkTheme()) {

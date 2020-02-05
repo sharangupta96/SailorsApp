@@ -1,7 +1,5 @@
-<div class="col-lg-12" style="
-    position: fixed;
-    z-index: 1;">
-    <div class="row pt-1 pl-5 pr-5" style="border-bottom: solid 1px #eff0f1; background-color: white;">
+<div class="container headerClass">
+    <div class="row loginNav pl-5 pr-5" style="border-bottom: solid 1px #eff0f1; background-color: white;">
         <div class="col-lg-7">
             <div class="greyText">
                 call us 012 445698 7456 896
@@ -24,7 +22,7 @@
             <img src="../../assets/logo.png" alt="Logo">
         </div>
         <div class="col-lg-5 alignCenter mt-2">
-            <span class="navLinks">HOME</span>
+            <span class="navLinks" [routerLink]="['/home']">HOME</span>
             <span class="navLinks">SHOP</span>
             <span class="navLinks">BLOG</span>
             <span class="navLinks">PAGES</span>

@@ -1,23 +1,37 @@
-.greyText{
-    color: grey;
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.alignCenter{
-    text-align: right;
-    .greyButton{
-        border: none;
-        background-color: inherit;
+.headerClass{
+    position: fixed;
+    z-index: 1;
+    max-width: inherit;
+    .loginNav{
+        padding-top:16px;
+        padding-bottom: 8px;
+    }
+    .greyText{
+        color: grey;
         font-size: 12px;
         font-weight: 500;
-        color: grey;
         text-transform: uppercase;
-        padding-right: 19px;
-        padding-left: 24px;
-        cursor: pointer;
+    }
+    .alignCenter{
+        text-align: right;
+        .greyButton{
+            border: none;
+            background-color: inherit;
+            font-size: 12px;
+            font-weight: 500;
+            color: grey;
+            text-transform: uppercase;
+            padding-right: 19px;
+            padding-left: 24px;
+            cursor: pointer;
+        }
     }
 }
+
+
+
+
+
 
 .iconPosition{
     padding-right: 27px;
@@ -39,9 +53,15 @@
     &:hover {
         color: blue;
     }
+    &:focus {
+        color: blue;
+        outline-color: transparent;
+    }
 }
 
 .header{
     background-color: var(--header-background-color);
+    padding-top: 12px;
+    padding-bottom: 8px;
 }
 

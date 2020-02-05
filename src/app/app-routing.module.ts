@@ -6,6 +6,7 @@ import { ProductDetailsGuard } from './product-details/product-details.guard';
 
 const routes: Routes = [
   { path: 'home', component: ProductListingComponent },
+  { path:'',component:ProductListingComponent},
   {
     path: 'product-details/:id',
     canActivate: [ProductDetailsGuard],
