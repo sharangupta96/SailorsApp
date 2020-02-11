@@ -18,11 +18,19 @@
         color:white;
         font-family:segoe UI;
         font-weight: bold;
-        font-size:62px;
+        font-size:22px;
     }
     .lines{
         color:white;
         font-size: 14px;
         font-family: segoe UI;
+    }
+}
+
+@media screen and (min-width:576px){
+    .img-title{
+        .heading{
+            font-size:62px;
+        }
     }
 }

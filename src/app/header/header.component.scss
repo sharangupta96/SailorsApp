@@ -1,16 +1,23 @@
 .headerClass{
+    background-color: var(--header-background-color);
     position: fixed;
     z-index: 1;
     max-width: inherit;
     .loginNav{
         padding-top:16px;
         padding-bottom: 8px;
+        display:none;
     }
     .greyText{
         color: grey;
         font-size: 12px;
         font-weight: 500;
         text-transform: uppercase;
+    }
+    .header{
+        .nav-link-items{
+            display: none;  
+        }
     }
     .alignCenter{
         text-align: right;
@@ -60,8 +67,22 @@
 }
 
 .header{
-    background-color: var(--header-background-color);
+    
     padding-top: 12px;
     padding-bottom: 8px;
 }
+
+@media screen and (min-width:991px){
+    .headerClass{
+        .loginNav{
+            display: block;
+        }
+        .header{
+            .nav-link-items{
+                display: block;  
+            }
+        }
+    }
+}
+ 
 

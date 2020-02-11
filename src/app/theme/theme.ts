@@ -11,7 +11,7 @@ export interface Theme {
       "--grey-text": "#808080",
       "--header-background-color": "#f6f6f6",
       "--listing-background-color": "#ffffff",
-      "--newsletter-background-color": "#eaf4ff"
+      "--newsletter-background-color": "#faf9ff"
     }
   };
   
