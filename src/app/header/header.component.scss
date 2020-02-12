@@ -1,9 +1,10 @@
 .headerClass{
-    background-color: var(--header-background-color);
+    background-color: white;
     position: fixed;
     z-index: 1;
     max-width: inherit;
     .loginNav{
+        background-color: white;
         padding-top:16px;
         padding-bottom: 8px;
         display:none;
@@ -15,6 +16,7 @@
         text-transform: uppercase;
     }
     .header{
+        background-color: var(--header-background-color);
         .nav-link-items{
             display: none;  
         }
@@ -35,11 +37,6 @@
     }
 }
 
-
-
-
-
-
 .iconPosition{
     padding-right: 27px;
     padding-left: 28px;
@@ -50,7 +47,6 @@
 }
 
 .navLinks{
-    
     padding-right: 23px;
     padding-left: 23px;
     font-weight: bold;
@@ -67,7 +63,6 @@
 }
 
 .header{
-    
     padding-top: 12px;
     padding-bottom: 8px;
 }

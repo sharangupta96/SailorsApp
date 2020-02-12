@@ -1,12 +1,4 @@
-.image{
-    width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
-.box{
-    position: relative;
-}
-.img-title{
+.banner-title{
     position: absolute;
     color:black;
     text-align: center;
@@ -20,15 +12,21 @@
         font-weight: bold;
         font-size:22px;
     }
-    .lines{
+    .description{
         color:white;
         font-size: 14px;
         font-family: segoe UI;
     }
 }
 
+.banner-image{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    padding-top: 111px;
+}
 @media screen and (min-width:576px){
-    .img-title{
+    .banner-title{
         .heading{
             font-size:62px;
         }

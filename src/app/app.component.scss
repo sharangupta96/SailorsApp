@@ -1,9 +1,13 @@
 .iconPosition {
     position: fixed;
-    top: 62px;
-    right: 15px;
-    font-size: 32px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
     z-index: 9;
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
 }
 .color{
     color: white;

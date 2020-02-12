@@ -11,3 +11,30 @@
         margin-right: auto;
     }
 }
+
+.preview{
+    font-size: small;
+}
+
+.banner-height{
+    height: 336px;
+    overflow: hidden;
+}
+.banner-image{
+    padding-top: 110px;
+}
+.banner-title{
+    position: absolute;
+    color:black;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 30%;
+    letter-spacing: 3px;
+    .heading{
+        color:white;
+        font-family:segoe UI;
+        font-weight: bold;
+        font-size:22px;
+    }
+}
