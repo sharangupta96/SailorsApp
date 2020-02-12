@@ -66,6 +66,9 @@
     padding-top: 12px;
     padding-bottom: 8px;
 }
+.icon{
+    display: block;
+}
 
 @media screen and (min-width:991px){
     .headerClass{
@@ -77,6 +80,9 @@
                 display: block;  
             }
         }
+    }
+    .icon{
+        display: none;
     }
 }
  
