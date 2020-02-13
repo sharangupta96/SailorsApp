@@ -1,14 +1,25 @@
-.alignCenter{
-    text-align: center;
-}
 .footer-class{
     color: var(--text-color);
     background-color: var(--listing-background-color);
     padding-top: 75px;
     padding-bottom: 75px;
-}
-.description{
-    color: var(--grey-text);
-    font-size: 12px;
-    font-weight: 500;
+    .description{
+        color: var(--grey-text);
+        font-size: 12px;
+        font-weight: 500;
+    }
+    input{
+        width: 84%;
+        height: 42px;
+        text-indent: 20px;
+    }
+    button{
+        height: 42px;
+        width: 39px;
+        border: none;
+        margin-top: 1px;
+    }
+    .alignCenter{
+        text-align: center;
+    }
 }

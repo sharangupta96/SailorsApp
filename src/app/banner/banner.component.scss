@@ -17,11 +17,23 @@
         font-size: 14px;
         font-family: segoe UI;
     }
+    .text-dark {
+        font-weight: bold;
+        background-color: white;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
 }
 
 .banner-image{
     width: 100vw;
     height: 100vh;
+    max-width:100%;
     object-fit: cover;
     padding-top: 111px;
 }

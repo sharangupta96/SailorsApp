@@ -1,12 +1,12 @@
 .list{
     display: block;
     background-color: var(--listing-background-color);
-    padding-top: 54px;
+    padding-top: 120px;
     padding-bottom: 90px;
     .list-item{
         border:none;
         padding-left: 50px;
-        padding-right: 50px; 
+        padding-right: 50px;
         display:inline-table;
         background-color: var(--listing-background-color);
         .items{
