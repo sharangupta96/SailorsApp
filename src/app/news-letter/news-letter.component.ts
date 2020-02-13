@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./news-letter.component.scss']
 })
 export class NewsLetterComponent implements OnInit {
-  @Input() iconColor= false;
+  @Input() iconColor = false;
   constructor() { }
 
   ngOnInit() {

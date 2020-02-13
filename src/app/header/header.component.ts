@@ -7,7 +7,7 @@ import { ThemeService } from "../theme/theme.service";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  @Input() iconColor: boolean = false;
+  @Input() iconColor = false;
   constructor(private themeService: ThemeService) { }
 
   ngOnInit() {

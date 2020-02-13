@@ -2,7 +2,7 @@
 <div class="container-fluid list" id="productList">
   <div class="row">
     <div class="col-lg-2 col-md-6 col-sm-12 card list-item" *ngFor="let product of productList" [routerLink]="['/product-details', product.id]">
-      <img class="card-img-top" src="{{product.imageUrl}}">
+      <img class="card-img-top" src="{{product.imageUrl}}" alt="Card Image">
       <div class="card-body items">
         <h4 class="card-title item-name">{{product.title}}</h4>
         <p class="card-text item-price">{{product.price}}</p>

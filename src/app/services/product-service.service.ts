@@ -16,7 +16,7 @@ export class ProductServiceService {
   getHero(id: number) {
     return this.getProductList().pipe( map((productList) => {
       return productList.find(product => product.id === id);
-    }))
+    }));
   }
 
 }

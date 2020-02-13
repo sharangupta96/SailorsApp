@@ -7,18 +7,17 @@ import { ProductServiceService } from '../services/product-service.service';
   styleUrls: ['./product-listing.component.scss']
 })
 export class ProductListingComponent implements OnInit {
-  productList : any;
+  productList: any;
   constructor(private productService: ProductServiceService) { }
 
   ngOnInit() {
     this.getProductListing();
   }
 
-  getProductListing(){
+  getProductListing() {
     this.productService.getProductList().subscribe((data) => {
       this.productList = data;
-      console.log(data);
-    })
+    });
   }
 
 }
