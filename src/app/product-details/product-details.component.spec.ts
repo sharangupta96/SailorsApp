@@ -3,6 +3,7 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductServiceService } from '../services/product-service.service';
 import { ProductDetailsComponent } from './product-details.component';
+import { of as observableOf } from 'rxjs';
 describe('ProductDetailsComponent', () => {
   let component: ProductDetailsComponent;
   let fixture: ComponentFixture<ProductDetailsComponent>;
@@ -11,7 +12,7 @@ describe('ProductDetailsComponent', () => {
       snapshot: { paramMap: { get: () => ({}) } }
     });
     const productServiceServiceStub = () => ({
-      getHero: id => ({ subscribe: () => ({}) })
+      getHero: id => (observableOf(1))
     });
     TestBed.configureTestingModule({
       schemas: [NO_ERRORS_SCHEMA],

@@ -1,10 +1,10 @@
 <div class="container-fluid ">
-    <div class="row" [class.banner-height] = "url != '/home'">
-        <img class="img-responsive" [class.banner-image] = "url == '/home'" [class.banner-image-details] = "url != '/home'" src="../../assets/Banner/banner-bg.png" alt="Banner Image">
-        <div [class.banner-title] = "url == '/home'" [class.banner-title-details] = "url != '/home'">
+    <div class="row" [class.banner-height] = "url != '/home' && url != '/'">
+        <img class="img-responsive" [class.banner-image] = "url == '/home' || url == '/'" [class.banner-image-details] = "url != '/home' && url != '/'" src="../../assets/Banner/banner-bg.png" alt="Banner Image">
+        <div [class.banner-title] = "url == '/home' || url == '/'" [class.banner-title-details] = "url != '/home' && url != '/'">
             <h1 class="heading" style="white-space: pre-line">{{title}}</h1>
             <p class="description" style="white-space: pre-line">{{ description }}</p>
-            <button *ngIf="url == '/home'" (click)="scrollToList()" class="btn bg-white btn-text-dark">{{ btnText }}</button>
+            <button *ngIf="url == '/home' || url == '/'" (click)="scrollToList()" class="btn bg-white btn-text-dark">{{ btnText }}</button>
         </div>
     </div>
 </div>

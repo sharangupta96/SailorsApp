@@ -24,13 +24,16 @@ describe('ProductServiceService', () => {
       const httpTestingController = TestBed.get(HttpTestingController);
       service.getProductList().subscribe(res => {
         // expect(res).toEqual();
+        const req = httpTestingController.expectOne(
+          '../assets/data/generated.json'
+        );
+        expect(req.request.method).toEqual('GET');
+        req.flush();
+        httpTestingController.verify();
       });
-      const req = httpTestingController.expectOne(
-        '../assets/data/generated.json'
-      );
-      expect(req.request.method).toEqual('GET');
-      req.flush();
-      httpTestingController.verify();
     });
+  });
+  it('#getHero', () => {
+    service.getHero(1);
   });
 });

@@ -14,7 +14,6 @@ import { ThemeModule } from './theme/theme.module';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { NotificationComponent } from './notification/notification.component';
 
 
 @NgModule({
@@ -25,8 +24,7 @@ import { NotificationComponent } from './notification/notification.component';
     ProductListingComponent,
     NewsLetterComponent,
     FooterComponent,
-    ProductDetailsComponent,
-    NotificationComponent
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

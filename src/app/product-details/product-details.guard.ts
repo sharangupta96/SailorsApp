@@ -7,18 +7,15 @@ import { Observable } from 'rxjs';
 })
 export class ProductDetailsGuard implements CanActivate {
 
-  constructor(private router: Router){}
+  constructor(private router: Router) {}
 
-  canActivate(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    let id = +next.url[1].path;
-    if(isNaN(id)||id<1) {
-      alert("invalid id");
-      this.router.navigate(['/products']);
-      return false
-    }   
+  canActivate(next: ActivatedRouteSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    const id = +next.url[1].path;
+    if (isNaN(id) || id < 1) {
+      alert('invalid id');
+      this.router.navigate(['/home']);
+      return false;
+    }
     return true;
   }
-  
 }
