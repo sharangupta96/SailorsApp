@@ -2,24 +2,81 @@
     display: block;
     background-color: var(--listing-background-color);
     padding-top: 120px;
-    padding-bottom: 90px;
+    padding-bottom: 140px;
     .list-item{
         border:none;
-        padding-left: 50px;
-        padding-right: 50px;
         display:inline-table;
         background-color: var(--listing-background-color);
+        img{
+            width: 219px;
+            height: 254px;
+        }
         .items{
             text-align: center;
         }
         .item-name{
-            font-size: 12px;
+            font-size: 14px;
             color: var(--text-color);
+            font-weight: bold;
         }
         .item-price{
-            font-size: 12px;
+            font-size: 16px;
             color: var(--grey-text);
-            font-weight: 500;
+            font-weight: bold;
         }
     }
 }
+
+::ng-deep .banner-image{
+    width: 100vw;
+    height: 100vh;
+    max-width:100%;
+    object-fit: cover;
+    padding-top: 111px;
+}
+::ng-deep .banner-title{
+    position: absolute;
+    color:black;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 50%;
+    letter-spacing: 3px;
+    .heading{
+        color:white;
+        font-family:segoe UI;
+        font-weight: bold;
+        font-size:22px;
+    }
+    .description{
+        color:white;
+        font-size: 14px;
+        font-family: segoe UI;
+    }
+    .btn-text-dark {
+        font-weight: bold;
+        font-size: 14px;
+        background-color: white;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+}
+
+::ng-deep { 
+    @media screen and (min-width:576px){
+    .banner-title{
+        .heading{
+            font-size:62px;
+        }
+    }
+    .banner-image{
+        padding-top: 62px;
+    }
+}
+}
+

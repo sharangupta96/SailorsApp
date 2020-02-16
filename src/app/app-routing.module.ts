@@ -5,8 +5,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ProductDetailsGuard } from './product-details/product-details.guard';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: ProductListingComponent },
-  { path:'',component:ProductListingComponent},
   {
     path: 'product-details/:id',
     canActivate: [ProductDetailsGuard],

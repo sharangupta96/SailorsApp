@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
@@ -6,14 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
-
+  @Input() title: string;
+  @Input() description: string;
+  @Input() btnText: string;
+  url: string;
   constructor() { }
 
   ngOnInit() {
+    this.url = window.location.pathname;
   }
-  scrollToList(){
-    let el = document.getElementById('productList');
+  scrollToList() {
+    const el = document.getElementById('productList');
     el.scrollIntoView();
   }
- 
 }

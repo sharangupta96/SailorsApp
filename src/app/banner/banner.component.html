@@ -1,11 +1,10 @@
 <div class="container-fluid ">
-    <div class="row">
-        <img class="banner-image img-responsive" src="../../assets/Banner/banner-bg.png" alt="Banner Image">
-        <div class="banner-title">
-            <h1 class="heading">Fashion For <br>Upcoming Winter</h1>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nesciunt <br>rerum modi
-                similique mollitia neque incidunt animi dolor officiis!</p>
-            <button (click)="scrollToList()" class="btn bg-white text-dark">View Collection</button>
+    <div class="row" [class.banner-height] = "url != '/home'">
+        <img class="img-responsive" [class.banner-image] = "url == '/home'" [class.banner-image-details] = "url != '/home'" src="../../assets/Banner/banner-bg.png" alt="Banner Image">
+        <div [class.banner-title] = "url == '/home'" [class.banner-title-details] = "url != '/home'">
+            <h1 class="heading" style="white-space: pre-line">{{title}}</h1>
+            <p class="description" style="white-space: pre-line">{{ description }}</p>
+            <button *ngIf="url == '/home'" (click)="scrollToList()" class="btn bg-white btn-text-dark">{{ btnText }}</button>
         </div>
     </div>
 </div>

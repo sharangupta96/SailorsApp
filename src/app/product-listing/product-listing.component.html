@@ -1,4 +1,4 @@
-<app-banner></app-banner>
+<app-banner [title] = 'title' [description]='description'[btnText]='btnText'></app-banner>
 <div class="container-fluid list" id="productList">
   <div class="row">
     <div class="col-lg-2 col-md-6 col-sm-12 card list-item" *ngFor="let product of productList" [routerLink]="['/product-details', product.id]">
