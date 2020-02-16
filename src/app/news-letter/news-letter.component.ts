@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { SwPush } from '@angular/service-worker';
+import { WebnotificationService } from '../webnotification.service';
 
 @Component({
   selector: 'app-news-letter',
@@ -7,7 +9,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NewsLetterComponent implements OnInit {
   @Input() iconColor = false;
-  constructor() { }
+  isEnabled = this.swPush.isEnabled;
+  isGranted = Notification.permission === 'granted';
+  constructor( private swPush: SwPush, private webNotificationService: WebnotificationService) { }
+
+  submitNotification(): void {
+    this.webNotificationService.subscribeToNotification();
+  }
+
+  
 
   ngOnInit() {
   }
