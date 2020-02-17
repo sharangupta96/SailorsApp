@@ -82,3 +82,11 @@
 }
 }
 
+::ng-deep { 
+    @media screen and (min-width:991px){
+        .list-item{
+            margin-left: 33px;
+        }
+    }
+}
+
