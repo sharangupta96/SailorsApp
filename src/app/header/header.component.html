@@ -37,10 +37,29 @@
                     <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-heart-o iconPosition" aria-hidden="true"></i>
                     <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-shopping-cart iconPosition" aria-hidden="true"></i>
                 </div>
-            </div>   
+            </div>
         </div> 
+        <div class="btn-group" dropdown>
+            <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-bars icon" dropdownToggle></i>
+            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu dropdown-menu-right menu-links"
+                role="menu" aria-labelledby="button-basic">
+              <li role="menuitem"><a class="dropdown-item" href="#">Home</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Shop</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Blog</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Pages</a></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Contact</a></li>
+              <li class="divider dropdown-divider"></li>
+              <li role="menuitem"><a class="dropdown-item" href="#">Search</a>
+              <li role="menuitem"><a class="dropdown-item" href="#">My Account</a>
+              <li role="menuitem"><a class="dropdown-item" href="#">My Favourite</a>
+              <li role="menuitem"><a class="dropdown-item" href="#">My Cart</a>
+              </li>
+            </ul>
+        </div>  
     </div>
-    <i [ngClass]="iconColor ? 'color' : ''" class="fa fa-bars icon"></i>
+    
+     
+    
 </div>
 <!-- --black-025: #fafafb;
     --black-050: #eff0f1;

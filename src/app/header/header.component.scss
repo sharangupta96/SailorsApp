@@ -68,9 +68,20 @@
 }
 .icon{
     display: block;
+    float: right;
+    position: absolute;
+    margin-top: 7px;
+    font-size: 33px;
+}
+.menu-links{
+    display: block;
 }
 .cursor-pointer {
     cursor: pointer;
+}
+
+.dropdown-menu-right{
+    right: -29px !important;
 }
 
 @media screen and (min-width:991px){
@@ -85,6 +96,9 @@
         }
     }
     .icon{
+        display: none;
+    }
+    .menu-links{
         display: none;
     }
 }
