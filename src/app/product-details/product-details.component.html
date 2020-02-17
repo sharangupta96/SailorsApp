@@ -1,25 +1,25 @@
 <app-banner [title] = 'title' [description]='description'></app-banner>
 <div class="container-fluid entire">
     <div class="wrapper row">
-        <div class="preview col-md-6">
+        <div class="preview col-md-6 col-sm-12">
             <div class="preview-pic tab-content">
                 <img class="photo" src="{{oneProduct?.imageUrl}}" alt="Product View">
             </div>
             <ul class="preview-thumbnail nav nav-tabs">
             </ul>
         </div>
-        <div class="details col-md-6">
+        <div class="details col-md-6 col-sm-12">
             <h3 class="product-title">{{ oneProduct?.title }}</h3>
             <h4 class="price">{{oneProduct?.price}}</h4>
-            <p class="category">Category:<span>{{oneProduct?.category}}</span></p>
-            <p class="avail">Availablity: <span>{{oneProduct?.availability}}</span></p>
+            <p class="category">Category <span class="blue-class ml-4">:{{oneProduct?.category}}</span></p>
+            <p class="avail">Availablity <span class="ml-3">:{{oneProduct?.availability}}</span></p>
             <hr style="border: 1px solid black;">
             <p class="product-description">{{ oneProduct?.description }}</p>
             <div>
-                <label for="quantity">Quantity : </label><input id="quantity" type="number" value="0" />
+                <label for="quantity" class="mr-2">Quantity : </label><input id="quantity" type="number" value="0" />
             </div>
-            <div class="action">
-                <button class="add-to-cart btn btn-primary" type="button">Add to cart</button>
+            <div class="action mb-4 mt-2">
+                <button class="add-to-cart btn btn-primary mr-2" type="button">Add to cart</button>
                 <span><i class="fa fa-heart"></i></span>
             </div>
         </div>
