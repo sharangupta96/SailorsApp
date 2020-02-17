@@ -15,6 +15,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run 'ng build --prod' for production build. The build artifacts will be stored in the `dist/` directory.
 ## Hosting on http server
+ get into build floder by running cd dist/SailorsApp and 
  Run 'http-server -p 8081'. The build will be served in the respective port
 
 ## Running unit tests
